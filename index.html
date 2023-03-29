@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bootstrap freelancer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
   <link rel="stylesheet" href="assets/style.css" />
@@ -16,11 +17,12 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md bg_nav_black ">
+    <nav class="navbar navbar-expand-md bg_nav_black fixed-top ">
       <div class="container">
         <a class="navbar-brand text-light" href="#">START BOOTSTRAP</a>
-        <button class="navbar-toggler rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler rounded  border border-gray " type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -39,16 +41,16 @@
       </div>
     </nav>
 
-    <section class="container-fluid py-3 green_section">
+    <section class="container-fluid py-3 green_section mt-5">
       <div class="container text-center text-light">
         <img src="img/avatar.svg" alt="" class="avatar_img" />
-        <h1>START BOOTSTRAP</h1>
+        <h1 class="mt-3">START BOOTSTRAP</h1>
         <div class="d-flex flex-row justify-content-center align-items-center">
           <div class="line"></div>
-         <i class="fa-solid fa-star"></i>
-         <div class="line"></div>
+          <i class="fa-solid fa-star"></i>
+          <div class="line"></div>
         </div>
-        <div class="jumbo-text mb-3 py-3 d-flex justify-content-center">
+        <div class="d-flex justify-content-center mb-3 py-3">
           <div>GRAPHIC ARTIST</div>
           <div class="px-2">- WEB DESIGNER -</div>
           <div>ILLUSTRATOR</div>
@@ -124,8 +126,10 @@
             maiores, pariatur officia aperiam sit a praesentium. Dolorem eaque
           </p>
         </div>
+
         <div class="d-flex justify-content-center align-items-center">
-          <button type="button" class="green_section text-light rounded btn_about">Download</button>
+          <button type="button" class="green_section text-light rounded btn_about"><i
+              class="bi bi-download me-2"></i>Download</button>
         </div>
       </div>
     </div>
@@ -142,50 +146,58 @@
             <div class="line bg-black"></div>
           </div>
         </div>
-        <div class="bottom">
-          <h6>Name</h6>
-          <hr />
-          <h6>Email Address</h6>
-          <hr />
-          <h6>Phone Number</h6>
-          <hr />
-          <h6>Message</h6>
-          <hr />
-          <button class="green_section text-light">Send</button>
+
+        <div class="col-12 d-flex flex-column justify-content-center align-items-center mb-3">
+
+          <div class="w-100 d-flex justify-content-center">
+            <label for="" class="col-1">Nome</label>
+            <input class="col-11 ms-2 " type="text" name="name" id="name" required> 
+          </div>
+          <hr>
+
+          <div class="w-100 d-flex justify-content-center">
+            <label for="floatingInput">Email address</label>
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          </div>
+      
         </div>
       </div>
+
+
+
     </div>
   </div>
 
-  <div class="container-fluid bg_footer text-light text-center">
-    <div class="row py-3">
-      <div class="col-12 col-md-4">
-        <h5>LOCATION</h5>
-        <span>2215 John Daniel Drive Clark, MO 54243</span>
-      </div>
-      <div class="col-12 col-md-4">
-        <h5>AROUND THE WEB</h5>
-        <div class="icon d-flex justify-content-center">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-google-plus-g"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-linkedin-in"></i>
+    <div class="container-fluid bg_footer text-light text-center">
+      <div class="row py-3">
+        <div class="col-12 col-md-4">
+          <h5 class="my-3">LOCATION</h5>
+          <span>2215 John Daniel Drive Clark, MO 54243</span>
+        </div>
+        <div class="col-12 col-md-4">
+          <h5 class="my-3">AROUND THE WEB</h5>
+          <div class="icon d-flex justify-content-center">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <h5 class="my-3">ABOUT FREELANCE</h5>
+          <span>Freelance is a free to use, open source Bootstrap theme created by
+            Start Bootstrap</span>
         </div>
       </div>
-      <div class="col-12 col-md-4">
-        <h5>ABOUT FREELANCE</h5>
-        <span>Freelance is a free to use, open source Bootstrap theme created by
-          Start Bootstrap</span>
-      </div>
     </div>
-  </div>
 
-  <div class="container-fluid copyright_nav text-light text-center py-3">
-    <span>Copyright Your website 2019</span>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-    crossorigin="anonymous"></script>
+    <div class="container-fluid copyright_nav text-light text-center py-3">
+      <span>Copyright Your website 2019</span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
