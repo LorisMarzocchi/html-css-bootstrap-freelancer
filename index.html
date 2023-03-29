@@ -17,9 +17,9 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md bg_nav_black fixed-top ">
+    <nav class="navbar navbar-expand-md bg_nav_black fixed-top" data-bs-theme="dark">
       <div class="container">
-        <a class="navbar-brand text-light" href="#">START BOOTSTRAP</a>
+        <a class="navbar-brand" href="#">START BOOTSTRAP</a>
         <button class="navbar-toggler rounded  border border-gray " type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
@@ -28,13 +28,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
             <li class="nav-item">
-              <a class="nav-link text-light" aria-current="page" href="#">PORTFOLIO</a>
+              <a class="nav-link" aria-current="page" href="#">PORTFOLIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">LINK</a>
+              <a class="nav-link" href="#">LINK</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link text-light" href="#">CONTACT</a>
+              <a class="nav-link" href="#">CONTACT</a>
             </li>
           </ul>
         </div>
@@ -146,20 +146,36 @@
             <div class="line bg-black"></div>
           </div>
         </div>
+        <form action="">
+          <div class="col-12 mb-3">
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Nome</label>
+              <input type="text" class="form-control rounded-0 border-bottom border-0" id="formGroupExampleInput" placeholder="">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control rounded-0 border-bottom border-0" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Phone Number</label>
+              <input type="text" class="form-control rounded-0 border-bottom border-0" id="formGroupExampleInput" placeholder="">
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Message</label>
+              <div class="form-floating">
+                <textarea class="form-control rounded-0 border-bottom border-0" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2"></label>
+              </div>
+            </div>
+            <button class="btn_contact green_section text-center text-light rounded">Send</button>
+    
+        </form>
 
-        <div class="col-12 d-flex flex-column justify-content-center align-items-center mb-3">
+          
 
-          <div class="w-100 d-flex justify-content-center">
-            <label for="" class="col-1">Nome</label>
-            <input class="col-11 ms-2 " type="text" name="name" id="name" required> 
-          </div>
-          <hr>
-
-          <div class="w-100 d-flex justify-content-center">
-            <label for="floatingInput">Email address</label>
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-          </div>
-      
+          
+        
         </div>
       </div>
 
@@ -168,13 +184,13 @@
     </div>
   </div>
 
-    <div class="container-fluid bg_footer text-light text-center">
+    <div class="container-fluid d-flex justify-content-around bg_footer text-light text-center">
       <div class="row py-3">
-        <div class="col-12 col-md-4">
+        <div class="col-11 col-md-4">
           <h5 class="my-3">LOCATION</h5>
           <span>2215 John Daniel Drive Clark, MO 54243</span>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-11 col-md-4">
           <h5 class="my-3">AROUND THE WEB</h5>
           <div class="icon d-flex justify-content-center">
             <i class="fa-brands fa-facebook-f"></i>
@@ -183,7 +199,7 @@
             <i class="fa-brands fa-linkedin-in"></i>
           </div>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-11 col-md-4">
           <h5 class="my-3">ABOUT FREELANCE</h5>
           <span>Freelance is a free to use, open source Bootstrap theme created by
             Start Bootstrap</span>
