@@ -1,59 +1,37 @@
-[class*="col-"] {
-    height: 10px;
-    background-color: blue;
-    border: 1px solid white;
-    text-align: center; 
-    color: white;
-   
-    
+.bg_nav_black{
+    background-color: #2C3E50;
 }
-.verde {
-    background-color: green;
-    height: 80px;
+.green_section {
+    background-color: #1ABC9C;
+}
+.bg_footer{
+    background-color: #3A546D;
+}
+.copyright_nav {
+    background-color: #2C3E50;
+    height: 50px;
+}
 
-    text-align: center;
+.icon i {
+    border: 1px solid white;
+    padding: .5rem;
+    color: white;
+    border-radius: 100%;
+    height: 2rem;
+    width: 2rem;
+    margin-inline: 5px;
 }
-.menu{
-    height: 100px;
-    background-color: blue;
+
+.avatar_img {
+    width: 200px;
 }
-.sec-1{
-    height: 400px;
-    background-color: cyan;
+
+.contents img {
+    width: 100%;
 }
-.sec-2{
-    height: 400px;
-    background-color: red;
-}
-.sec-3{
-    height: 400px;
-    background-color: violet;
-}
-.sec-4{
-    height: 300px;
-    background-color: red;
-}
-.sec-form{
-    height: 400px;
-    background-color: lightskyblue;
-}
-.sec-footer{
-    height: 350px;
-    background-color: brown;
-}
-.sec-copy{
-    height: 100px;
-    background-color: chocolate;
-}
-.container-big{
-    background-color: green;
-    height: 300px;
-}
-.portfolio{
-    height: 50px;
-    background-color: blueviolet;
-}
-.copyright{
-    height: 50px;
-    background-color: blue;
+.line{
+    background-color: white;
+    width: 20%;
+    height: 2px;
+    margin-inline: 10px;
 }
